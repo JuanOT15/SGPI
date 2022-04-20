@@ -17,7 +17,10 @@ namespace SGPI.Controllers
         {
             return View();
         }
-
+        public IActionResult MenuEstudiante()
+        {
+            return View();
+        }
 
     }
 }

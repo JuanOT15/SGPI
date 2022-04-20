@@ -25,6 +25,10 @@ namespace SGPI.Controllers
         {
             return View();
         }
+        public IActionResult MenuCoordinador()
+        {
+            return View();
+        }
 
 
     }

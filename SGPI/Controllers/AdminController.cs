@@ -18,6 +18,10 @@ namespace SGPI.Controllers
             return View();
         }
 
-        
+        public IActionResult MenuAdmin()
+        {
+            return View();
+        }
+
     }
 }
