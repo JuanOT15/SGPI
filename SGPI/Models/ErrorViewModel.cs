@@ -1,5 +1,3 @@
-using System;
-
 namespace SGPI.Models
 {
     public class ErrorViewModel

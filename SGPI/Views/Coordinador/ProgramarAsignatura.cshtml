@@ -1,7 +1,105 @@
-﻿
-@{
-    ViewData["Title"] = "ProgramarAsignatura";
+﻿@{
+    ViewData["Title"] = "Programar Asignatura";
 }
 
-<h1>Vista Programar Asignatura</h1>
+<head>
+    <style>
+        .header {
+            height: 700px;
+            padding: 12px;
+            background-image: url("https://www.todofondos.net/wp-content/uploads/mas-de-67-fondos-de-pantalla-de-fondo-blanco.-fondo-de-pantalla-blancos.jpg")
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <br>
+        <h1><center>Sistema de Gestion De Posgrado</h1></center>
+        <div style="text-align:right"> <a href="https://localhost:44384/">Cerrar Sesion</a></div>
+        <br />
+        <br />
+        <h2>Consultas:</h2>
+        <br />
+        <label><b> Programa:</b></label>
+        <select>
+            <option value="Ninguno">Ninguno </option>
+            <option value="Tecnología en Sistemas">Tecnología en Sistemas </option>
+            <option value="Ciencia Forence"> Ciencia Forence</option>
+            <option value="Técnica Profesional En Sistemas"> Técnica Profesional En Sistemas </option>
+            <option value="Maestría en Educación">Maestría en Educación </option>
+            <option value="Profesional en Criminalística">Profesional en Criminalística </option>
+        </select>
+        <br />
+        <label><b> Semestre:</b></label>
+        <select>
+            <option value="0">0 </option>
+            <option value="1">1 </option>
+            <option value="2">2 </option>
+            <option value="3">3 </option>
+            <option value="4">4 </option>
+            <option value="5">5 </option>
+            <option value="6">6 </option>
+            <option value="7">7 </option>
+            <option value="8">8 </option>
+            <option value="9">9 </option>
+            <option value="10">10 </option>
+            <option value="11">11 </option>
+            <option value="12">12 </option>
+        </select>
 
+        <br />
+        <br />
+        <table style="width: 100%">
+            <tr>
+                <th>
+                    Fecha Inicio
+                </th>
+                <th>
+                    Fecha Final
+                </th>
+                <th>
+                    Bloque
+                </th>
+                <th>
+                    Sala
+                </th>
+                <th>
+                    Modulo
+                </th>
+                <th>
+                    Cod.Asignatura
+                </th>
+
+
+            </tr>
+            <tr>
+                <td>18/04/2022</td>
+                <td>18/08/2022</td>
+                <td>Bloque 10</td>
+                <td>311</td>
+                <td>Sala</td>
+                <td>823523</td>
+            </tr>
+            <tr>
+                <td>18/04/2022</td>
+                <td>31/08/2022</td>
+                <td>Bloque 2</td>
+                <td>101</td>
+                <td>Sala</td>
+                <td>734783</td>
+            </tr>
+
+        </table>
+        <br />
+        <br />
+        <div style="text-align:right">
+            <div style="text-align:right"> <a href="https://localhost:44384/Coordinador/ProgramarAsignatura" class="cbutton">Ingresar</a></div>
+            <br>
+            <a href="https://localhost:44384/Coordinador/MenuCoordinador" <button type="button" class="btn  btn-outline-secondary float-right">Volver</button></a>
+            <br>
+            <div style="text-align:right"> <a href="https://localhost:44384/Coordinador/ProgramarAsignatura" class="cbutton">Guardar</a></div>
+        </div>
+    </div>
+</body>
+
+</html>

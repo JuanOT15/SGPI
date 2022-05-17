@@ -1,7 +1,122 @@
 ﻿
 @{
-    ViewData["Title"] = "HomologacionAsignatura";
+    ViewData["Title"] = "Homologacion Asignatura";
 }
 
-<h1>Vista Homologacion de Asignatura</h1>
+<head>
+    <style>
+        .header {
+            height: 700px;
+            padding: 12px;
+            background-image: url("https://www.todofondos.net/wp-content/uploads/mas-de-67-fondos-de-pantalla-de-fondo-blanco.-fondo-de-pantalla-blancos.jpg")
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <br>
+        <h1><center>Sistema de Gestion De Posgrado</h1></center>
+        <br />
+        <br />
+        <h2>Homologacion de Asignaturas:</h2>
+        <div style="text-align:right"> <a href="https://localhost:44384/">Cerrar Sesion</a></div>
+
+        <label><b> Buscar documento:</b></label>
+        <input type="text" placeholder="Nombre" class="nombre">
+        <label><b> Periodo Acadmico:</b></label>
+        <input type="text" placeholder="Periodo" class="Periodo">
+        <label><b> Universidad:</b></label>
+        <input type="text" placeholder="Universidad" class="Universidad">
+        <label><b> Fecha De Elaboracion:</b></label>
+        <input type="text" placeholder="Fecha" class="Fecha">
+        <label><b> Nombre y Apellido:</b></label>
+        <input type="text" placeholder="Nombre" class="Nombre">
+        <label><b> Documento:</b></label>
+        <input type="text" placeholder="Documento" class="Documento">
+        <br />
+        <label><b>Programa:</b></label>
+        <input type="text" placeholder="Programa" class="Programa">
+        <label><b> Tipo de Homologacion:</b></label>
+        <input type="text" placeholder="Tipo" class="Tipo">
+
+
+
+        <br />
+        <br />
+        <br />
+        <table style="width: 100%">
+            <tr>
+                <th>
+                    Nro.
+                </th>
+                <th>
+                    codigo
+                </th>
+                <th>
+                    Asignatura
+                </th>
+                <th>
+                    Creditos
+                </th>
+                <th>
+                    Nivel
+                </th>
+                <th>
+                    Programa
+                </th>
+                <th>
+                    Universidad
+                </th>
+                <th>
+                    NombreAsignatura
+                </th>
+                <th>
+                    CodigoAsignatura
+                </th>
+                <th>
+                    Creditos
+                </th>
+                <th>
+                    Nota
+                </th>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>101</td>
+                <td>Matematicas</td>
+                <td>45</td>
+                <td>5</td>
+                <td>Tecnologia en Sistemas</td>
+                <td>Tecnologico de Antioquia</td>
+                <td>Matematicas</td>
+                <td>5257</td>
+                <td>24</td>
+                <td>4.2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>102</td>
+                <td>Base De Datos</td>
+                <td>45</td>
+                <td>5</td>
+                <td>Tecnologia en Sistemas</td>
+                <td>Tecnologico de Antioquia</td>
+                <td>Base De Datos</td>
+                <td>5734</td>
+                <td>24</td>
+                <td>3.8</td>
+            </tr>
+        </table>
+        <br />
+
+        <div style="text-align:right">
+            <div style="text-align:right"> <a href="https://localhost:44384/Coordinador/HomologacionAsignatura" class="cbutton">Ingresar</a></div>
+            <br>
+            <a href="https://localhost:44384/Coordinador/MenuCoordinador" <button type="button" class="btn  btn-outline-secondary float-right">Volver</button></a>
+            <br>
+            <div style="text-align:right"> <a href="https://localhost:44384/Coordinador/HomologacionAsignatura" class="cbutton">Guardar</a></div>
+        </div>
+    </div>
+</body>
 

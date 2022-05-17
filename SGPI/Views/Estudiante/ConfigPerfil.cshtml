@@ -1,7 +1,248 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "ConfigPerfil";
 }
 
-<h1>Vista Configuracion de Perfil</h1>
+<head>
+    <style>
+        .header {
+            height: 650px;
+            padding: 20px;
+            background-image: url("https://www.todofondos.net/wp-content/uploads/mas-de-67-fondos-de-pantalla-de-fondo-blanco.-fondo-de-pantalla-blancos.jpg")
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <br>
+        <h1><center>Sistema de Gestion De Posgrado</h1></center>
+        <br />
+        <h2>Configuracion Usuario:</h2>
+        <div style="text-align:right"> <a href=>Cerrar Sesion</a></div>
+        <br />
+        <label><b> Tipo De Documento</b></label>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><b> Documento de Identidad</b></label>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><b> Genero</b></label>
+        <br />
+        <select>
+            <option value="Ninguna">Ninguna </option>
+            <option value="C.C">C.C </option>
+            <option value="Tarjeta de Identidad">Tarjeta de Identidad </option>
+        </select>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <input type="text" placeholder="Documento" class="Documento">
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <select>
+            <option value="Ninguna">Ninguna </option>
+            <option value="Masculino">Masculino </option>
+            <option value="Femenino">Femenino </option>
+            <option value="Otro">Otro </option>
+        </select>
+        <br />
+        <br />
+        <label><b> Fecha De Nacimiento:</b></label>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><b> Primer Nombre:</b></label>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><b> Segundo Nombre:</b></label>
+        &nbsp;
+        &nbsp;
+        &nbsp;
 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><b> Primer Apellido:</b></label> &nbsp;
+        &nbsp;
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><b> Segundo Apellido:</b></label>
+        <input type="text" placeholder="Fecha" class="Fecha">
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <input type="text" placeholder="Primer" class="Primer">
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <input type="text" placeholder="Segundo" class="Segundo">
+        &nbsp;
+        &nbsp;
+
+        <input type="text" placeholder="Primer" class="Primer">
+
+        <input type="text" placeholder="Segundo" class="Segundo">
+        <br />
+        <br />
+        <label><b> Correo Electronico:</b></label>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><b> Telefono:</b></label>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><b> Dirreccion:</b></label>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><b> Egresado:</b></label> &nbsp;
+        <br />
+        <input type="text" placeholder="Correo" class="Correo">
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <input type="text" placeholder="Tel" class="Tel">
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <input type="text" placeholder="Direccion" class="Direccion">
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        Si: <input type="radio" name="">
+        &nbsp;
+        &nbsp;
+        No:  <input type="radio" name="">
+        <br />
+        <br />
+
+        <label><b> Tipo De Rol</b></label>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label><b> Programa</b></label>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <label><b> Adjuntar Certificado Electoral</b></label>
+        <br />
+        <select>
+            <option value="Ninguna">Ninguna </option>
+            <option value="Estudiante">Estudiante </option>
+            <option value="Profesor">Profesor </option>
+        </select>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select>
+            <option value="Ninguno">Ninguna </option>
+            <option value="Tecnologia en Sistemas">Tecnologia en Sistemas </option>
+            <option value="Tecnica Profesional En Sistemas">Tecnica Profesional En Sistemas </option>
+            <option value="Otro">Otro </option>
+        </select>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <input type="submit" class="submit" value="ADJUNTAR">
+        <input type="submit" class="submit" value="EXAMINAR">
+        <div style="text-align:right">
+            <div style="text-align:right"> <a href="https://localhost:44384/Estudiante/ConfigPerfil" class="cbutton">Ingresar</a></div>
+            <br>
+            <div style="text-align:right"> <a href="https://localhost:44384/Estudiante/MenuEstudiante" class="cbutton">Volver</a></div>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,13 +1,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using SGPI.Models;
 
 namespace SGPI
 {
@@ -24,6 +21,13 @@ namespace SGPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            string connectionString = ConfigurationExtensions
+                .GetConnectionString(this.Configuration,
+                "DefaultConnectionString");
+            services.AddDbContext<SGPI_DBContext>(
+                options => options.UseSqlServer(connectionString)
+                );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

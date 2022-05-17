@@ -1,7 +1,154 @@
-﻿
+﻿@model SGPI.Models.Usuario
+
 @{
-    ViewData["Title"] = "CrearUsuario";
+    ViewData["Title"] = "Crear Usuario";
 }
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <style>
+        .header {
+            height: 700px;
+            padding: 12px;
+            background-image: url("https://img.freepik.com/vector-gratis/diseno-fondo-blanco-estilo-perspectiva-3d-forma-hexagonal_1017-27558.jpg?w=2000")
+        }
+      </style>
 
-<h1>Vista CrearUsuario</h1>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+</head>
+<body>
+    <div class="header">
+     <style>
 
+        body {
+          background-image: url('https://static.vecteezy.com/system/resources/previews/001/176/927/original/blue-and-white-abstract-background-vector.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+
+        header {
+
+            height: 700px;
+            padding: 12px;
+            background-image: url("https://www.todofondos.net/wp-content/uploads/mas-de-67-fondos-de-pantalla-de-fondo-blanco.-fondo-de-pantalla-blancos.jpg")
+        } 
+   </style>
+    
+
+
+<form method="post">
+   <div style="text-align:right"> <a href="https://localhost:44384/">Cerrar Sesion</a></div>
+    <br>
+    <h1 style="text-align: center" class="title">Crear usuario</h1>
+   <br>
+   <br><br><br><br><br><br>
+        
+       
+            <div class="form-row">
+
+           <div class="col">
+           <label asp-for="Nombre">Ingresar el nombre:</label>
+            <input asp-for="Nombre" type="text" placeholder="Nombre ">
+           </div>
+           <div class="col">
+          <label asp-for="Nombre">Ingresar el nombre:</label>
+          <input asp-for="Apellido" type="text" placeholder="Apellido ">
+             </div>
+
+            <div class="col">
+            <label asp-for="Documento">Ingresar el documento:</label>
+            <input asp-for="Documento" type="text" placeholder="Documento ">
+           </div>
+           <div class="col">
+          <label asp-for="Email">Ingresar el correo:</label>
+          <input asp-for="Email" type="text" placeholder="Correo ">
+             </div>
+        
+            <br><br>
+
+            <div class="col">
+          <label asp-for="Direccion">Ingresar la direccion:</label>
+          <input asp-for="Direccion" type="text" placeholder="Direccion ">
+             </div>
+          
+             </div>
+
+              <br><br>
+
+              <div class="form-row">
+
+             <div class="col">
+
+         <label for="start">Dia de nacimiento:</label>
+                <input type="date" id="start" name="trip-start"
+                       value="2018-07-22"
+                       min="2018-01-01" max="2018-12-31">
+             </div>
+
+              <div class="col">
+                <label asp-for="Telefono">Ingresar el telefono:</label>
+                <input asp-for="Telefono" type="text" placeholder="Telefono aquí...">
+             </div>
+           
+
+
+         <div class="col">
+            <label asp-for="TipoDoc">Tipo de documento</label>
+            @Html.DropDownList("TipoDoc", new SelectList(ViewBag.tipoDoc, "IdTipoDoc", "ValTipoDoc"));
+        </div>
+
+        <div class="col">
+            <label asp-for="IdPrograma">Programa</label>
+            @Html.DropDownList("IdPrograma", new SelectList(ViewBag.Programa, "IdPrograma", "ValPrograma"));
+        </div>
+        
+        <div class="col">
+            <label asp-for="Genero">Genero</label>
+            @Html.DropDownList("Genero", new SelectList(ViewBag.genero, "IdGenero", "ValGenero"))
+        </div>
+
+         </div>
+
+         <br>
+
+        <div class="form-row">
+            
+
+       <div class="col">
+            <label asp-for="Rol">Rol</label>
+            @Html.DropDownList("Rol", new SelectList(ViewBag.rol, "IdRol", "ValRol"))
+        </div>
+        
+         </div>
+       
+        
+         <br><br>
+       
+        <div class="buttons">
+             <a href="https://localhost:44384/Admin/MenuAdmin" <button type="button" class="btn btn-outline-secondary float-right">Volver</button></a>
+             <a href="https://localhost:44384/Admin/CrearUsuario" <button type="button" class="btn btn-outline-secondary float-right">Limpiar</button></a>
+            <button class="btn btn-outline-primary float-right" type="submit">Guardar</button>
+            
+        </div>
+      
+  
+    </form>
+     </div>
+     
+
+
+
+
+
+
+</body>
+</html>
